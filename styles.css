@@ -1,68 +1,119 @@
-/* Base Styles */
+/* ===============================
+   Base Styles & Background
+   =============================== */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background: linear-gradient(to right, #e6f0ff, #ffffff); /* Soft gradient */
   color: #333;
 }
 
-/* Header Section */
+/* ===============================
+   Header Section
+   =============================== */
 header {
-  background-color: #004080;
+  background: linear-gradient(to right, #004080, #0066cc);
   color: white;
-  padding: 2rem;
+  padding: 3rem 2rem;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  letter-spacing: 1px;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-top: 0.5rem;
 }
 
 .cta {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   background-color: #ffcc00;
   color: #004080;
-  padding: 0.6rem 1.2rem;
+  padding: 0.8rem 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
 
-/* Section Styling */
+.cta:hover {
+  background-color: #ffe066;
+}
+
+/* ===============================
+   Section Container Styling
+   =============================== */
 section {
   background-color: white;
   margin: 2rem auto;
   padding: 2rem;
-  max-width: 900px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.01);
 }
 
 section h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: #004080;
 }
 
-/* About Section */
+/* ===============================
+   About Section
+   =============================== */
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+#about h3 {
+  margin-top: 1.5rem;
+  color: #004080;
+}
+
 #about ul {
   list-style-type: none;
-  padding: 0;
+  padding-left: 0;
 }
 
 #about li {
   margin-bottom: 0.5rem;
 }
 
-/* Projects Section */
+#about .project {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f0f8ff;
+  border-left: 4px solid #004080;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#about .project h4 {
+  margin-bottom: 0.5rem;
+  color: #004080;
+}
+
+#about .project ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+/* ===============================
+   Projects Section
+   =============================== */
 #projects .project {
   margin-bottom: 2rem;
   padding: 1rem 1.5rem;
@@ -70,6 +121,11 @@ section h2 {
   border-left: 4px solid #004080;
   border-radius: 6px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: background-color 0.3s ease;
+}
+
+#projects .project:hover {
+  background-color: #eef6ff;
 }
 
 #projects .project h3 a {
@@ -100,12 +156,16 @@ section h2 {
   color: #004080;
 }
 
-/* Contact Section */
+/* ===============================
+   Contact Section
+   =============================== */
 #contact a {
   color: #004080;
   text-decoration: underline;
+  font-weight: bold;
 }
 
 #contact a:hover {
   text-decoration: none;
+  color: #0066cc;
 }
