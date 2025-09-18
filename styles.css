@@ -5,19 +5,19 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #e6f0ff, #ffffff); /* Soft gradient */
-  color: #333;
+  background: linear-gradient(to right, #2c2c2c, #3a3a3a); /* Dark grey gradient */
+  color: #e0e0e0; /* Light text for contrast */
 }
 
 /* ===============================
    Header Section
    =============================== */
 header {
-  background: linear-gradient(to right, #004080, #0066cc);
-  color: white;
+  background: linear-gradient(to right, #1a1a1a, #333333); /* Dark header */
+  color: #ffcc00;
   padding: 3rem 2rem;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 header h1 {
@@ -35,7 +35,7 @@ header p {
   display: inline-block;
   margin-top: 1.5rem;
   background-color: #ffcc00;
-  color: #004080;
+  color: #1a1a1a;
   padding: 0.8rem 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -51,12 +51,12 @@ header p {
    Section Container Styling
    =============================== */
 section {
-  background-color: white;
+  background-color: #1f1f1f;
   margin: 2rem auto;
   padding: 2rem;
   max-width: 1000px;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
 }
 
@@ -67,7 +67,7 @@ section:hover {
 section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #004080;
+  color: #ffcc00;
 }
 
 /* ===============================
@@ -80,7 +80,7 @@ section h2 {
 
 #about h3 {
   margin-top: 1.5rem;
-  color: #004080;
+  color: #ffcc00;
 }
 
 #about ul {
@@ -95,15 +95,15 @@ section h2 {
 #about .project {
   margin-top: 1rem;
   padding: 1rem;
-  background-color: #f0f8ff;
-  border-left: 4px solid #004080;
+  background-color: #2a2a2a;
+  border-left: 4px solid #ffcc00;
   border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 #about .project h4 {
   margin-bottom: 0.5rem;
-  color: #004080;
+  color: #ffcc00;
 }
 
 #about .project ul {
@@ -117,19 +117,19 @@ section h2 {
 #projects .project {
   margin-bottom: 2rem;
   padding: 1rem 1.5rem;
-  background-color: #f9f9f9;
-  border-left: 4px solid #004080;
+  background-color: #2a2a2a;
+  border-left: 4px solid #ffcc00;
   border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   transition: background-color 0.3s ease;
 }
 
 #projects .project:hover {
-  background-color: #eef6ff;
+  background-color: #3a3a3a;
 }
 
 #projects .project h3 a {
-  color: #004080;
+  color: #ffcc00;
   text-decoration: none;
 }
 
@@ -153,19 +153,19 @@ section h2 {
   content: "•";
   position: absolute;
   left: 0;
-  color: #004080;
+  color: #ffcc00;
 }
 
 /* ===============================
    Contact Section
    =============================== */
 #contact a {
-  color: #004080;
+  color: #ffcc00;
   text-decoration: underline;
   font-weight: bold;
 }
 
 #contact a:hover {
   text-decoration: none;
-  color: #0066cc;
+  color: #ffe066;
 }
