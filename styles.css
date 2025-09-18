@@ -41,7 +41,7 @@ section {
   background-color: white;
   margin: 2rem auto;
   padding: 2rem;
-  max-width: 800px;
+  max-width: 900px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
@@ -63,21 +63,49 @@ section h2 {
 }
 
 /* Projects Section */
-.project {
+#projects .project {
   margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  background-color: #f9f9f9;
+  border-left: 4px solid #004080;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.project h3 {
+#projects .project h3 a {
+  color: #004080;
+  text-decoration: none;
+}
+
+#projects .project h3 a:hover {
+  text-decoration: underline;
+}
+
+#projects .project ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0.5rem;
+}
+
+#projects .project ul li {
   margin-bottom: 0.5rem;
-  color: #333;
+  padding-left: 1.2rem;
+  position: relative;
 }
 
-.project p {
-  margin: 0;
+#projects .project ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #004080;
 }
 
 /* Contact Section */
 #contact a {
   color: #004080;
   text-decoration: underline;
+}
+
+#contact a:hover {
+  text-decoration: none;
 }
