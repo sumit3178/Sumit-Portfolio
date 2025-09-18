@@ -1,123 +1,19 @@
 /* ===============================
-   Base Styles & Background
+   Featured Projects Section (Black Background)
    =============================== */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to right, #2c2c2c, #3a3a3a); /* Dark grey gradient */
-  color: #e0e0e0; /* Light text for contrast */
+#projects {
+  background-color: #000000; /* Pure black */
+  color: #e0e0e0; /* Light grey text */
 }
 
-/* ===============================
-   Header Section
-   =============================== */
-header {
-  background: linear-gradient(to right, #1a1a1a, #333333); /* Dark header */
-  color: #ffcc00;
-  padding: 3rem 2rem;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-header h1 {
-  margin: 0;
-  font-size: 3rem;
-  letter-spacing: 1px;
-}
-
-header p {
-  font-size: 1.3rem;
-  margin-top: 0.5rem;
-}
-
-.cta {
-  display: inline-block;
-  margin-top: 1.5rem;
-  background-color: #ffcc00;
-  color: #1a1a1a;
-  padding: 0.8rem 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-}
-
-.cta:hover {
-  background-color: #ffe066;
-}
-
-/* ===============================
-   Section Container Styling
-   =============================== */
-section {
-  background-color: #1f1f1f;
-  margin: 2rem auto;
-  padding: 2rem;
-  max-width: 1000px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
-}
-
-section:hover {
-  transform: scale(1.01);
-}
-
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+#projects h2 {
   color: #ffcc00;
 }
 
-/* ===============================
-   About Section
-   =============================== */
-#about p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-#about h3 {
-  margin-top: 1.5rem;
-  color: #ffcc00;
-}
-
-#about ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#about li {
-  margin-bottom: 0.5rem;
-}
-
-#about .project {
-  margin-top: 1rem;
-  padding: 1rem;
-  background-color: #2a2a2a;
-  border-left: 4px solid #ffcc00;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-
-#about .project h4 {
-  margin-bottom: 0.5rem;
-  color: #ffcc00;
-}
-
-#about .project ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-
-/* ===============================
-   Projects Section
-   =============================== */
 #projects .project {
   margin-bottom: 2rem;
   padding: 1rem 1.5rem;
-  background-color: #2a2a2a;
+  background-color: #1a1a1a; /* Dark grey card */
   border-left: 4px solid #ffcc00;
   border-radius: 6px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
@@ -125,7 +21,7 @@ section h2 {
 }
 
 #projects .project:hover {
-  background-color: #3a3a3a;
+  background-color: #2a2a2a;
 }
 
 #projects .project h3 a {
@@ -147,6 +43,7 @@ section h2 {
   margin-bottom: 0.5rem;
   padding-left: 1.2rem;
   position: relative;
+  color: #e0e0e0;
 }
 
 #projects .project ul li::before {
@@ -154,18 +51,4 @@ section h2 {
   position: absolute;
   left: 0;
   color: #ffcc00;
-}
-
-/* ===============================
-   Contact Section
-   =============================== */
-#contact a {
-  color: #ffcc00;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-#contact a:hover {
-  text-decoration: none;
-  color: #ffe066;
 }
