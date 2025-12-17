@@ -102,6 +102,24 @@
         <li>SQL Views: RiskScore, SuspiciousFlags, SenderStats</li>
       </ul>
     </div>
+    <section id="tableau">
+  <h2>Interactive Tableau Dashboard</h2>
+  <p>Connected Sheets Story – live Tableau Public visualization.</p>
+
+  <!-- Load Tableau Public Embedding API -->
+  <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+
+  <!-- Tableau visualization -->
+  <tableau-viz
+    id="tableauViz"
+    src="https://public.tableau.com/views/ConnectedSheetsfor12_08-FinalSENT/Story1bysumit"
+    width="100%"
+    height="700px"
+    toolbar="bottom"
+    hide-tabs>
+  </tableau-viz>
+</section>
+
   </section>
 
   <section id="certifications">
